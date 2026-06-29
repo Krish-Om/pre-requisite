@@ -1,0 +1,9 @@
+README.md
+main.py
+pyproject.toml
+prequisite.egg-info/PKG-INFO
+prequisite.egg-info/SOURCES.txt
+prequisite.egg-info/dependency_links.txt
+prequisite.egg-info/entry_points.txt
+prequisite.egg-info/requires.txt
+prequisite.egg-info/top_level.txt

@@ -1,0 +1,4 @@
+--- SELECT QUERY
+SELECT * FROM Users;
+
+SELECT * FROM Users WHERE 

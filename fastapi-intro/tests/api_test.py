@@ -14,7 +14,7 @@ def test_read_main():
 def test_get_hero_by_id():
     response = client.get("/heroes/1")
     assert response.status_code == 200
-    assert response.json() == {"name": "Flash"}
+    assert response.json() == {"nsudo dnf install msbuildame": "Flash"}
     assert isinstance(response.json(), dict) and HeroResponse(**response.json())
 
 

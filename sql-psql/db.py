@@ -56,6 +56,7 @@ class Notes(Base):
 
 def init_db():
     Base.metadata.create_all(engine)
+    print("Database initialized")
 
 
 def get_users(session: SessionDep) -> list[Users]:

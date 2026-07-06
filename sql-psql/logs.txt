@@ -1,0 +1,637 @@
+
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.utf8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+sh: locale: not found
+2026-07-01 15:44:33.257 UTC [34] WARNING:  no usable system locales were found
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /var/lib/postgresql/data -l logfile start
+
+initdb: warning: enabling "trust" authentication for local connections
+initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+waiting for server to start....2026-07-01 15:44:38.474 UTC [40] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-01 15:44:38.479 UTC [40] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-01 15:44:38.493 UTC [43] LOG:  database system was shut down at 2026-07-01 15:44:33 UTC
+2026-07-01 15:44:38.500 UTC [40] LOG:  database system is ready to accept connections
+ done
+server started
+CREATE DATABASE
+
+
+/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+
+waiting for server to shut down....2026-07-01 15:44:38.632 UTC [40] LOG:  received fast shutdown request
+2026-07-01 15:44:38.637 UTC [40] LOG:  aborting any active transactions
+2026-07-01 15:44:38.640 UTC [40] LOG:  background worker "logical replication launcher" (PID 46) exited with exit code 1
+2026-07-01 15:44:38.641 UTC [41] LOG:  shutting down
+2026-07-01 15:44:38.646 UTC [41] LOG:  checkpoint starting: shutdown immediate
+.2026-07-01 15:44:40.150 UTC [41] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.051 s, sync=1.424 s, total=1.509 s; sync files=301, longest=0.006 s, average=0.005 s; distance=4266 kB, estimate=4266 kB; lsn=0/191C7E0, redo lsn=0/191C7E0
+2026-07-01 15:44:40.160 UTC [40] LOG:  database system is shut down
+ done
+server stopped
+
+PostgreSQL init process complete; ready for start up.
+
+2026-07-01 15:44:40.284 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-01 15:44:40.284 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-01 15:44:40.284 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-01 15:44:40.296 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-01 15:44:40.311 UTC [56] LOG:  database system was shut down at 2026-07-01 15:44:40 UTC
+2026-07-01 15:44:40.325 UTC [1] LOG:  database system is ready to accept connections
+2026-07-01 15:49:40.342 UTC [54] LOG:  checkpoint starting: time
+2026-07-01 15:49:44.882 UTC [54] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.420 s, sync=0.082 s, total=4.541 s; sync files=12, longest=0.008 s, average=0.007 s; distance=270 kB, estimate=270 kB; lsn=0/19600F0, redo lsn=0/1960098
+2026-07-01 17:41:24.290 UTC [1] LOG:  received fast shutdown request
+2026-07-01 17:41:24.297 UTC [1] LOG:  aborting any active transactions
+2026-07-01 17:41:24.302 UTC [1] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+2026-07-01 17:41:24.302 UTC [54] LOG:  shutting down
+2026-07-01 17:41:24.312 UTC [54] LOG:  checkpoint starting: shutdown immediate
+2026-07-01 17:41:24.362 UTC [54] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.060 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=243 kB; lsn=0/19601A0, redo lsn=0/19601A0
+2026-07-01 17:41:24.366 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 02:01:58.247 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 02:01:58.248 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 02:01:58.248 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 02:01:58.258 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 02:01:58.269 UTC [29] LOG:  database system was shut down at 2026-07-01 17:41:24 UTC
+2026-07-02 02:01:58.280 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 02:04:13.495 UTC [1] LOG:  received fast shutdown request
+2026-07-02 02:04:13.502 UTC [1] LOG:  aborting any active transactions
+2026-07-02 02:04:13.506 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 02:04:13.507 UTC [27] LOG:  shutting down
+2026-07-02 02:04:13.515 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 02:04:13.588 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.021 s, total=0.082 s; sync files=2, longest=0.011 s, average=0.011 s; distance=0 kB, estimate=0 kB; lsn=0/1960250, redo lsn=0/1960250
+2026-07-02 02:04:13.593 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 02:21:35.255 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 02:21:35.256 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 02:21:35.256 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 02:21:35.266 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 02:21:35.277 UTC [29] LOG:  database system was shut down at 2026-07-02 02:04:13 UTC
+2026-07-02 02:21:35.289 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 02:26:35.377 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 02:26:35.430 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.015 s, total=0.054 s; sync files=2, longest=0.008 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/1960358, redo lsn=0/1960300
+2026-07-02 03:37:45.361 UTC [1] LOG:  received fast shutdown request
+2026-07-02 03:37:45.367 UTC [1] LOG:  aborting any active transactions
+2026-07-02 03:37:45.371 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 03:37:45.371 UTC [27] LOG:  shutting down
+2026-07-02 03:37:45.378 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 03:37:45.413 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.042 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1960408, redo lsn=0/1960408
+2026-07-02 03:37:45.420 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 06:33:50.534 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 06:33:50.534 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 06:33:50.534 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 06:33:50.544 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 06:33:50.556 UTC [29] LOG:  database system was shut down at 2026-07-02 03:37:45 UTC
+2026-07-02 06:33:50.571 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 06:38:50.606 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 06:38:50.655 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.013 s, total=0.050 s; sync files=2, longest=0.007 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1960510, redo lsn=0/19604B8
+2026-07-02 06:55:57.126 UTC [83] ERROR:  syntax error at or near ")" at character 171
+2026-07-02 06:55:57.126 UTC [83] STATEMENT:  CREATE TABLE IF NOT EXISTS Users (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(255) NOT NULL,
+	    email VARCHAR(255) NOT NULL UNIQUE,
+	    password VARCHAR(255) NOT NULL,
+	);
+2026-07-02 06:55:57.126 UTC [83] ERROR:  syntax error at or near ")" at character 164
+2026-07-02 06:55:57.126 UTC [83] STATEMENT:  CREATE TABLE IF NOT EXISTS Notes(
+	    id SERIAL PRIMARY KEY,
+	    user_id INTEGER REFERENCES Users(id),
+	    title VARCHAR(255) NOT NULL,
+	    content TEXT NOT NULL,
+	);
+2026-07-02 06:56:38.815 UTC [98] ERROR:  syntax error at or near ")" at character 241
+2026-07-02 06:56:38.815 UTC [98] STATEMENT:  INSERT INTO Users (id,name,email,password) VALUES (
+	    101, 'Hari', 'hari@ex.com', 'fa;sdlfjas'),
+	    (102, 'Ram', 'ram@ex.com', 'a;sldfj;ajs'),
+	    (103, 'Anish', 'anish@ex.com', 'f;alsdfla'),
+	    (104, 'false', 'false@ex.com', 'fasdfa')
+	);
+2026-07-02 06:56:38.819 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.819 UTC [98] DETAIL:  Key (user_id)=(101) is not present in table "users".
+2026-07-02 06:56:38.819 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    101, 'Note 1', 'Content 1'
+	);
+2026-07-02 06:56:38.820 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.820 UTC [98] DETAIL:  Key (user_id)=(102) is not present in table "users".
+2026-07-02 06:56:38.820 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    102, 'Note 2', 'Content 2'
+	);
+2026-07-02 06:56:38.820 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.820 UTC [98] DETAIL:  Key (user_id)=(103) is not present in table "users".
+2026-07-02 06:56:38.820 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    103, 'Note 3', 'Content 3'
+	);
+2026-07-02 06:56:38.820 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.820 UTC [98] DETAIL:  Key (user_id)=(104) is not present in table "users".
+2026-07-02 06:56:38.820 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    104, 'Note 4', 'Content 4'
+	);
+2026-07-02 06:56:38.821 UTC [98] ERROR:  column "Haea" does not exist at character 25
+2026-07-02 06:56:38.821 UTC [98] STATEMENT:  UPDATE Users SET name = "Haea" WHERE id = 101;
+2026-07-02 06:57:21.669 UTC [108] ERROR:  column "Haea" does not exist at character 25
+2026-07-02 06:57:21.669 UTC [108] STATEMENT:  UPDATE Users SET name = "Haea" WHERE id = 101;
+2026-07-02 06:58:51.055 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 06:58:58.800 UTC [27] LOG:  checkpoint complete: wrote 75 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.426 s, sync=0.284 s, total=7.745 s; sync files=52, longest=0.009 s, average=0.006 s; distance=218 kB, estimate=218 kB; lsn=0/1996F48, redo lsn=0/1996EB8
+2026-07-02 07:08:02.855 UTC [146] ERROR:  syntax error at or near "select" at character 21
+2026-07-02 07:08:02.855 UTC [146] STATEMENT:  select * from users
+	select * from users;
+2026-07-02 07:08:52.000 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 07:08:52.145 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.013 s, total=0.145 s; sync files=2, longest=0.007 s, average=0.007 s; distance=0 kB, estimate=196 kB; lsn=0/1997240, redo lsn=0/19971E8
+2026-07-02 08:07:21.219 UTC [327] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:07:21.219 UTC [327] DETAIL:  Key (email)=(Krish@ex.com) already exists.
+2026-07-02 08:07:21.219 UTC [327] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krishna', 'Krish@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:08:53.345 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:08:53.931 UTC [27] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.507 s, sync=0.042 s, total=0.586 s; sync files=6, longest=0.009 s, average=0.007 s; distance=1 kB, estimate=177 kB; lsn=0/19979D8, redo lsn=0/1997980
+2026-07-02 08:09:05.445 UTC [335] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:09:05.445 UTC [335] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:09:05.445 UTC [335] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:12:03.749 UTC [345] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:12:03.749 UTC [345] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:12:03.749 UTC [345] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:13:07.976 UTC [349] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:13:07.976 UTC [349] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:13:07.976 UTC [349] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:13:22.569 UTC [350] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:13:22.569 UTC [350] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:13:22.569 UTC [350] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:13:54.031 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:13:54.396 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.030 s, total=0.365 s; sync files=4, longest=0.009 s, average=0.008 s; distance=2 kB, estimate=159 kB; lsn=0/1998258, redo lsn=0/1998200
+2026-07-02 08:15:38.669 UTC [358] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:15:38.669 UTC [358] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:15:38.669 UTC [358] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:17:19.192 UTC [364] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:17:19.192 UTC [364] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:17:19.192 UTC [364] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:17:37.094 UTC [366] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:17:37.094 UTC [366] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:17:37.094 UTC [366] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:18:54.496 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:18:54.916 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.028 s, total=0.421 s; sync files=4, longest=0.009 s, average=0.007 s; distance=2 kB, estimate=143 kB; lsn=0/1998B20, redo lsn=0/1998AC8
+2026-07-02 08:38:55.143 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:38:55.612 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.403 s, sync=0.033 s, total=0.470 s; sync files=5, longest=0.009 s, average=0.007 s; distance=2 kB, estimate=129 kB; lsn=0/1999410, redo lsn=0/19993B8
+2026-07-02 08:40:37.439 UTC [1] LOG:  received fast shutdown request
+2026-07-02 08:40:37.446 UTC [1] LOG:  aborting any active transactions
+2026-07-02 08:40:37.449 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 08:40:37.450 UTC [27] LOG:  shutting down
+2026-07-02 08:40:37.456 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 08:40:37.487 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.038 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=116 kB; lsn=0/19994C0, redo lsn=0/19994C0
+2026-07-02 08:40:37.494 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 10:53:49.701 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 10:53:49.701 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 10:53:49.701 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 10:53:49.711 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 10:53:49.730 UTC [28] LOG:  database system was shut down at 2026-07-02 08:40:37 UTC
+2026-07-02 10:53:49.741 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 10:58:49.830 UTC [26] LOG:  checkpoint starting: time
+2026-07-02 10:58:50.080 UTC [26] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.202 s, sync=0.020 s, total=0.251 s; sync files=3, longest=0.009 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/19995C8, redo lsn=0/1999570
+2026-07-02 12:19:32.033 UTC [1] LOG:  received fast shutdown request
+2026-07-02 12:19:32.040 UTC [1] LOG:  aborting any active transactions
+2026-07-02 12:19:32.043 UTC [1] LOG:  background worker "logical replication launcher" (PID 31) exited with exit code 1
+2026-07-02 12:19:32.043 UTC [26] LOG:  shutting down
+2026-07-02 12:19:32.051 UTC [26] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 12:19:32.098 UTC [26] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.055 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1999678, redo lsn=0/1999678
+2026-07-02 12:19:32.101 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 15:04:53.267 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 15:04:53.267 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 15:04:53.267 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 15:04:53.276 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 15:04:53.285 UTC [31] LOG:  database system was shut down at 2026-07-02 12:19:32 UTC
+2026-07-02 15:04:53.293 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 15:09:53.320 UTC [29] LOG:  checkpoint starting: time
+2026-07-02 15:09:53.370 UTC [29] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.014 s, total=0.051 s; sync files=2, longest=0.008 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1999780, redo lsn=0/1999728
+2026-07-02 15:44:25.859 UTC [1] LOG:  received fast shutdown request
+2026-07-02 15:44:25.871 UTC [1] LOG:  aborting any active transactions
+2026-07-02 15:44:25.873 UTC [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+2026-07-02 15:44:25.873 UTC [29] LOG:  shutting down
+2026-07-02 15:44:25.881 UTC [29] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 15:44:25.927 UTC [29] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.055 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1999830, redo lsn=0/1999830
+2026-07-02 15:44:25.933 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 15:56:34.618 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 15:56:34.619 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 15:56:34.619 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 15:56:34.628 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 15:56:34.639 UTC [29] LOG:  database system was shut down at 2026-07-02 15:44:25 UTC
+2026-07-02 15:56:34.650 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 16:01:34.706 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 16:01:34.802 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.012 s, total=0.096 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1999938, redo lsn=0/19998E0
+2026-07-02 17:04:21.583 UTC [1] LOG:  received fast shutdown request
+2026-07-02 17:04:21.589 UTC [1] LOG:  aborting any active transactions
+2026-07-02 17:04:21.592 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 17:04:21.592 UTC [27] LOG:  shutting down
+2026-07-02 17:04:21.602 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 17:04:21.658 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.066 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/19999E8, redo lsn=0/19999E8
+2026-07-02 17:04:21.665 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-03 02:01:46.930 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-03 02:01:46.930 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-03 02:01:46.930 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-03 02:01:46.943 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-03 02:01:46.957 UTC [27] LOG:  database system was shut down at 2026-07-02 17:04:21 UTC
+2026-07-03 02:01:46.970 UTC [1] LOG:  database system is ready to accept connections
+2026-07-03 02:23:50.367 UTC [25] LOG:  checkpoint starting: time
+2026-07-03 02:23:50.407 UTC [25] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.009 s, total=0.041 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1999AF0, redo lsn=0/1999A98
+2026-07-03 02:36:21.573 UTC [1] LOG:  received fast shutdown request
+2026-07-03 02:36:21.580 UTC [1] LOG:  aborting any active transactions
+2026-07-03 02:36:21.583 UTC [1] LOG:  background worker "logical replication launcher" (PID 30) exited with exit code 1
+2026-07-03 02:36:21.583 UTC [25] LOG:  shutting down
+2026-07-03 02:36:21.590 UTC [25] LOG:  checkpoint starting: shutdown immediate
+2026-07-03 02:36:21.625 UTC [25] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.042 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1999BA0, redo lsn=0/1999BA0
+2026-07-03 02:36:21.634 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-03 03:22:32.825 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-03 03:22:32.826 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-03 03:22:32.826 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-03 03:22:32.839 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-03 03:22:32.853 UTC [29] LOG:  database system was shut down at 2026-07-03 02:36:21 UTC
+2026-07-03 03:22:32.868 UTC [1] LOG:  database system is ready to accept connections
+2026-07-03 03:23:42.401 UTC [1] LOG:  received fast shutdown request
+2026-07-03 03:23:42.409 UTC [1] LOG:  aborting any active transactions
+2026-07-03 03:23:42.413 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-03 03:23:42.413 UTC [27] LOG:  shutting down
+2026-07-03 03:23:42.420 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-03 03:23:42.493 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.020 s, total=0.081 s; sync files=2, longest=0.011 s, average=0.010 s; distance=0 kB, estimate=0 kB; lsn=0/1999C50, redo lsn=0/1999C50
+2026-07-03 03:23:42.500 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-04 10:56:52.107 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-04 10:56:52.108 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-04 10:56:52.108 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-04 10:56:52.120 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-04 10:56:52.134 UTC [29] LOG:  database system was shut down at 2026-07-03 03:23:42 UTC
+2026-07-04 10:56:52.149 UTC [1] LOG:  database system is ready to accept connections
+2026-07-04 10:58:58.259 UTC [1] LOG:  received fast shutdown request
+2026-07-04 10:58:58.264 UTC [1] LOG:  aborting any active transactions
+2026-07-04 10:58:58.269 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-04 10:58:58.270 UTC [27] LOG:  shutting down
+2026-07-04 10:58:58.279 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-04 10:58:58.343 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.018 s, total=0.073 s; sync files=2, longest=0.010 s, average=0.009 s; distance=0 kB, estimate=0 kB; lsn=0/1999D00, redo lsn=0/1999D00
+2026-07-04 10:58:58.351 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-04 15:27:56.641 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-04 15:27:56.641 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-04 15:27:56.641 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-04 15:27:56.652 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-04 15:27:56.665 UTC [29] LOG:  database system was shut down at 2026-07-04 10:58:58 UTC
+2026-07-04 15:27:56.676 UTC [1] LOG:  database system is ready to accept connections
+2026-07-04 15:32:56.765 UTC [27] LOG:  checkpoint starting: time
+2026-07-04 15:32:56.816 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.014 s, total=0.052 s; sync files=2, longest=0.008 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1999E08, redo lsn=0/1999DB0
+The files belonging to this database system will be owned by user "postgres".
+This user must also own the server process.
+
+The database cluster will be initialized with locale "en_US.utf8".
+The default database encoding has accordingly been set to "UTF8".
+The default text search configuration will be set to "english".
+
+Data page checksums are disabled.
+
+fixing permissions on existing directory /var/lib/postgresql/data ... ok
+creating subdirectories ... ok
+selecting dynamic shared memory implementation ... posix
+selecting default "max_connections" ... 100
+selecting default "shared_buffers" ... 128MB
+selecting default time zone ... UTC
+creating configuration files ... ok
+running bootstrap script ... ok
+sh: locale: not found
+2026-07-01 15:44:33.257 UTC [34] WARNING:  no usable system locales were found
+performing post-bootstrap initialization ... ok
+syncing data to disk ... ok
+
+
+Success. You can now start the database server using:
+
+    pg_ctl -D /var/lib/postgresql/data -l logfile start
+
+initdb: warning: enabling "trust" authentication for local connections
+initdb: hint: You can change this by editing pg_hba.conf or using the option -A, or --auth-local and --auth-host, the next time you run initdb.
+waiting for server to start....2026-07-01 15:44:38.474 UTC [40] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-01 15:44:38.479 UTC [40] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-01 15:44:38.493 UTC [43] LOG:  database system was shut down at 2026-07-01 15:44:33 UTC
+2026-07-01 15:44:38.500 UTC [40] LOG:  database system is ready to accept connections
+ done
+server started
+CREATE DATABASE
+
+
+/usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+
+waiting for server to shut down....2026-07-01 15:44:38.632 UTC [40] LOG:  received fast shutdown request
+2026-07-01 15:44:38.637 UTC [40] LOG:  aborting any active transactions
+2026-07-01 15:44:38.640 UTC [40] LOG:  background worker "logical replication launcher" (PID 46) exited with exit code 1
+2026-07-01 15:44:38.641 UTC [41] LOG:  shutting down
+2026-07-01 15:44:38.646 UTC [41] LOG:  checkpoint starting: shutdown immediate
+.2026-07-01 15:44:40.150 UTC [41] LOG:  checkpoint complete: wrote 926 buffers (5.7%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.051 s, sync=1.424 s, total=1.509 s; sync files=301, longest=0.006 s, average=0.005 s; distance=4266 kB, estimate=4266 kB; lsn=0/191C7E0, redo lsn=0/191C7E0
+2026-07-01 15:44:40.160 UTC [40] LOG:  database system is shut down
+ done
+server stopped
+
+PostgreSQL init process complete; ready for start up.
+
+2026-07-01 15:44:40.284 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-01 15:44:40.284 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-01 15:44:40.284 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-01 15:44:40.296 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-01 15:44:40.311 UTC [56] LOG:  database system was shut down at 2026-07-01 15:44:40 UTC
+2026-07-01 15:44:40.325 UTC [1] LOG:  database system is ready to accept connections
+2026-07-01 15:49:40.342 UTC [54] LOG:  checkpoint starting: time
+2026-07-01 15:49:44.882 UTC [54] LOG:  checkpoint complete: wrote 47 buffers (0.3%); 0 WAL file(s) added, 0 removed, 0 recycled; write=4.420 s, sync=0.082 s, total=4.541 s; sync files=12, longest=0.008 s, average=0.007 s; distance=270 kB, estimate=270 kB; lsn=0/19600F0, redo lsn=0/1960098
+2026-07-01 17:41:24.290 UTC [1] LOG:  received fast shutdown request
+2026-07-01 17:41:24.297 UTC [1] LOG:  aborting any active transactions
+2026-07-01 17:41:24.302 UTC [1] LOG:  background worker "logical replication launcher" (PID 59) exited with exit code 1
+2026-07-01 17:41:24.302 UTC [54] LOG:  shutting down
+2026-07-01 17:41:24.312 UTC [54] LOG:  checkpoint starting: shutdown immediate
+2026-07-01 17:41:24.362 UTC [54] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.060 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=243 kB; lsn=0/19601A0, redo lsn=0/19601A0
+2026-07-01 17:41:24.366 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 02:01:58.247 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 02:01:58.248 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 02:01:58.248 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 02:01:58.258 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 02:01:58.269 UTC [29] LOG:  database system was shut down at 2026-07-01 17:41:24 UTC
+2026-07-02 02:01:58.280 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 02:04:13.495 UTC [1] LOG:  received fast shutdown request
+2026-07-02 02:04:13.502 UTC [1] LOG:  aborting any active transactions
+2026-07-02 02:04:13.506 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 02:04:13.507 UTC [27] LOG:  shutting down
+2026-07-02 02:04:13.515 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 02:04:13.588 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.021 s, total=0.082 s; sync files=2, longest=0.011 s, average=0.011 s; distance=0 kB, estimate=0 kB; lsn=0/1960250, redo lsn=0/1960250
+2026-07-02 02:04:13.593 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 02:21:35.255 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 02:21:35.256 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 02:21:35.256 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 02:21:35.266 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 02:21:35.277 UTC [29] LOG:  database system was shut down at 2026-07-02 02:04:13 UTC
+2026-07-02 02:21:35.289 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 02:26:35.377 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 02:26:35.430 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.015 s, total=0.054 s; sync files=2, longest=0.008 s, average=0.008 s; distance=0 kB, estimate=0 kB; lsn=0/1960358, redo lsn=0/1960300
+2026-07-02 03:37:45.361 UTC [1] LOG:  received fast shutdown request
+2026-07-02 03:37:45.367 UTC [1] LOG:  aborting any active transactions
+2026-07-02 03:37:45.371 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 03:37:45.371 UTC [27] LOG:  shutting down
+2026-07-02 03:37:45.378 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 03:37:45.413 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.042 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1960408, redo lsn=0/1960408
+2026-07-02 03:37:45.420 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 06:33:50.534 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 06:33:50.534 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 06:33:50.534 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 06:33:50.544 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 06:33:50.556 UTC [29] LOG:  database system was shut down at 2026-07-02 03:37:45 UTC
+2026-07-02 06:33:50.571 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 06:38:50.606 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 06:38:50.655 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.013 s, total=0.050 s; sync files=2, longest=0.007 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1960510, redo lsn=0/19604B8
+2026-07-02 06:55:57.126 UTC [83] ERROR:  syntax error at or near ")" at character 171
+2026-07-02 06:55:57.126 UTC [83] STATEMENT:  CREATE TABLE IF NOT EXISTS Users (
+	    id SERIAL PRIMARY KEY,
+	    name VARCHAR(255) NOT NULL,
+	    email VARCHAR(255) NOT NULL UNIQUE,
+	    password VARCHAR(255) NOT NULL,
+	);
+2026-07-02 06:55:57.126 UTC [83] ERROR:  syntax error at or near ")" at character 164
+2026-07-02 06:55:57.126 UTC [83] STATEMENT:  CREATE TABLE IF NOT EXISTS Notes(
+	    id SERIAL PRIMARY KEY,
+	    user_id INTEGER REFERENCES Users(id),
+	    title VARCHAR(255) NOT NULL,
+	    content TEXT NOT NULL,
+	);
+2026-07-02 06:56:38.815 UTC [98] ERROR:  syntax error at or near ")" at character 241
+2026-07-02 06:56:38.815 UTC [98] STATEMENT:  INSERT INTO Users (id,name,email,password) VALUES (
+	    101, 'Hari', 'hari@ex.com', 'fa;sdlfjas'),
+	    (102, 'Ram', 'ram@ex.com', 'a;sldfj;ajs'),
+	    (103, 'Anish', 'anish@ex.com', 'f;alsdfla'),
+	    (104, 'false', 'false@ex.com', 'fasdfa')
+	);
+2026-07-02 06:56:38.819 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.819 UTC [98] DETAIL:  Key (user_id)=(101) is not present in table "users".
+2026-07-02 06:56:38.819 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    101, 'Note 1', 'Content 1'
+	);
+2026-07-02 06:56:38.820 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.820 UTC [98] DETAIL:  Key (user_id)=(102) is not present in table "users".
+2026-07-02 06:56:38.820 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    102, 'Note 2', 'Content 2'
+	);
+2026-07-02 06:56:38.820 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.820 UTC [98] DETAIL:  Key (user_id)=(103) is not present in table "users".
+2026-07-02 06:56:38.820 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    103, 'Note 3', 'Content 3'
+	);
+2026-07-02 06:56:38.820 UTC [98] ERROR:  insert or update on table "notes" violates foreign key constraint "notes_user_id_fkey"
+2026-07-02 06:56:38.820 UTC [98] DETAIL:  Key (user_id)=(104) is not present in table "users".
+2026-07-02 06:56:38.820 UTC [98] STATEMENT:  INSERT INTO Notes (user_id, title, content) VALUES (
+	    104, 'Note 4', 'Content 4'
+	);
+2026-07-02 06:56:38.821 UTC [98] ERROR:  column "Haea" does not exist at character 25
+2026-07-02 06:56:38.821 UTC [98] STATEMENT:  UPDATE Users SET name = "Haea" WHERE id = 101;
+2026-07-02 06:57:21.669 UTC [108] ERROR:  column "Haea" does not exist at character 25
+2026-07-02 06:57:21.669 UTC [108] STATEMENT:  UPDATE Users SET name = "Haea" WHERE id = 101;
+2026-07-02 06:58:51.055 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 06:58:58.800 UTC [27] LOG:  checkpoint complete: wrote 75 buffers (0.5%); 0 WAL file(s) added, 0 removed, 0 recycled; write=7.426 s, sync=0.284 s, total=7.745 s; sync files=52, longest=0.009 s, average=0.006 s; distance=218 kB, estimate=218 kB; lsn=0/1996F48, redo lsn=0/1996EB8
+2026-07-02 07:08:02.855 UTC [146] ERROR:  syntax error at or near "select" at character 21
+2026-07-02 07:08:02.855 UTC [146] STATEMENT:  select * from users
+	select * from users;
+2026-07-02 07:08:52.000 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 07:08:52.145 UTC [27] LOG:  checkpoint complete: wrote 2 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.102 s, sync=0.013 s, total=0.145 s; sync files=2, longest=0.007 s, average=0.007 s; distance=0 kB, estimate=196 kB; lsn=0/1997240, redo lsn=0/19971E8
+2026-07-02 08:07:21.219 UTC [327] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:07:21.219 UTC [327] DETAIL:  Key (email)=(Krish@ex.com) already exists.
+2026-07-02 08:07:21.219 UTC [327] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krishna', 'Krish@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:08:53.345 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:08:53.931 UTC [27] LOG:  checkpoint complete: wrote 6 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.507 s, sync=0.042 s, total=0.586 s; sync files=6, longest=0.009 s, average=0.007 s; distance=1 kB, estimate=177 kB; lsn=0/19979D8, redo lsn=0/1997980
+2026-07-02 08:09:05.445 UTC [335] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:09:05.445 UTC [335] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:09:05.445 UTC [335] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:12:03.749 UTC [345] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:12:03.749 UTC [345] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:12:03.749 UTC [345] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:13:07.976 UTC [349] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:13:07.976 UTC [349] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:13:07.976 UTC [349] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:13:22.569 UTC [350] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:13:22.569 UTC [350] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:13:22.569 UTC [350] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:13:54.031 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:13:54.396 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.030 s, total=0.365 s; sync files=4, longest=0.009 s, average=0.008 s; distance=2 kB, estimate=159 kB; lsn=0/1998258, redo lsn=0/1998200
+2026-07-02 08:15:38.669 UTC [358] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:15:38.669 UTC [358] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:15:38.669 UTC [358] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:17:19.192 UTC [364] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:17:19.192 UTC [364] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:17:19.192 UTC [364] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:17:37.094 UTC [366] ERROR:  duplicate key value violates unique constraint "users_email_key"
+2026-07-02 08:17:37.094 UTC [366] DETAIL:  Key (email)=(Kri@ex.com) already exists.
+2026-07-02 08:17:37.094 UTC [366] STATEMENT:  INSERT INTO users (name, email, password) VALUES ('Krish', 'Kri@ex.com', 'alsdfjl;asdf') RETURNING users.id
+2026-07-02 08:18:54.496 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:18:54.916 UTC [27] LOG:  checkpoint complete: wrote 4 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.302 s, sync=0.028 s, total=0.421 s; sync files=4, longest=0.009 s, average=0.007 s; distance=2 kB, estimate=143 kB; lsn=0/1998B20, redo lsn=0/1998AC8
+2026-07-02 08:38:55.143 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 08:38:55.612 UTC [27] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.403 s, sync=0.033 s, total=0.470 s; sync files=5, longest=0.009 s, average=0.007 s; distance=2 kB, estimate=129 kB; lsn=0/1999410, redo lsn=0/19993B8
+2026-07-02 08:40:37.439 UTC [1] LOG:  received fast shutdown request
+2026-07-02 08:40:37.446 UTC [1] LOG:  aborting any active transactions
+2026-07-02 08:40:37.449 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 08:40:37.450 UTC [27] LOG:  shutting down
+2026-07-02 08:40:37.456 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 08:40:37.487 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.038 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=116 kB; lsn=0/19994C0, redo lsn=0/19994C0
+2026-07-02 08:40:37.494 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 10:53:49.701 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 10:53:49.701 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 10:53:49.701 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 10:53:49.711 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 10:53:49.730 UTC [28] LOG:  database system was shut down at 2026-07-02 08:40:37 UTC
+2026-07-02 10:53:49.741 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 10:58:49.830 UTC [26] LOG:  checkpoint starting: time
+2026-07-02 10:58:50.080 UTC [26] LOG:  checkpoint complete: wrote 5 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.202 s, sync=0.020 s, total=0.251 s; sync files=3, longest=0.009 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/19995C8, redo lsn=0/1999570
+2026-07-02 12:19:32.033 UTC [1] LOG:  received fast shutdown request
+2026-07-02 12:19:32.040 UTC [1] LOG:  aborting any active transactions
+2026-07-02 12:19:32.043 UTC [1] LOG:  background worker "logical replication launcher" (PID 31) exited with exit code 1
+2026-07-02 12:19:32.043 UTC [26] LOG:  shutting down
+2026-07-02 12:19:32.051 UTC [26] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 12:19:32.098 UTC [26] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.055 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1999678, redo lsn=0/1999678
+2026-07-02 12:19:32.101 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 15:04:53.267 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 15:04:53.267 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 15:04:53.267 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 15:04:53.276 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 15:04:53.285 UTC [31] LOG:  database system was shut down at 2026-07-02 12:19:32 UTC
+2026-07-02 15:04:53.293 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 15:09:53.320 UTC [29] LOG:  checkpoint starting: time
+2026-07-02 15:09:53.370 UTC [29] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.014 s, total=0.051 s; sync files=2, longest=0.008 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1999780, redo lsn=0/1999728
+2026-07-02 15:44:25.859 UTC [1] LOG:  received fast shutdown request
+2026-07-02 15:44:25.871 UTC [1] LOG:  aborting any active transactions
+2026-07-02 15:44:25.873 UTC [1] LOG:  background worker "logical replication launcher" (PID 34) exited with exit code 1
+2026-07-02 15:44:25.873 UTC [29] LOG:  shutting down
+2026-07-02 15:44:25.881 UTC [29] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 15:44:25.927 UTC [29] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.055 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1999830, redo lsn=0/1999830
+2026-07-02 15:44:25.933 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-02 15:56:34.618 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-02 15:56:34.619 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-02 15:56:34.619 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-02 15:56:34.628 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-02 15:56:34.639 UTC [29] LOG:  database system was shut down at 2026-07-02 15:44:25 UTC
+2026-07-02 15:56:34.650 UTC [1] LOG:  database system is ready to accept connections
+2026-07-02 16:01:34.706 UTC [27] LOG:  checkpoint starting: time
+2026-07-02 16:01:34.802 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.012 s, total=0.096 s; sync files=2, longest=0.006 s, average=0.006 s; distance=0 kB, estimate=0 kB; lsn=0/1999938, redo lsn=0/19998E0
+2026-07-02 17:04:21.583 UTC [1] LOG:  received fast shutdown request
+2026-07-02 17:04:21.589 UTC [1] LOG:  aborting any active transactions
+2026-07-02 17:04:21.592 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-02 17:04:21.592 UTC [27] LOG:  shutting down
+2026-07-02 17:04:21.602 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-02 17:04:21.658 UTC [27] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.066 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/19999E8, redo lsn=0/19999E8
+2026-07-02 17:04:21.665 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-03 02:01:46.930 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-03 02:01:46.930 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-03 02:01:46.930 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-03 02:01:46.943 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-03 02:01:46.957 UTC [27] LOG:  database system was shut down at 2026-07-02 17:04:21 UTC
+2026-07-03 02:01:46.970 UTC [1] LOG:  database system is ready to accept connections
+2026-07-03 02:23:50.367 UTC [25] LOG:  checkpoint starting: time
+2026-07-03 02:23:50.407 UTC [25] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.009 s, total=0.041 s; sync files=2, longest=0.005 s, average=0.005 s; distance=0 kB, estimate=0 kB; lsn=0/1999AF0, redo lsn=0/1999A98
+2026-07-03 02:36:21.573 UTC [1] LOG:  received fast shutdown request
+2026-07-03 02:36:21.580 UTC [1] LOG:  aborting any active transactions
+2026-07-03 02:36:21.583 UTC [1] LOG:  background worker "logical replication launcher" (PID 30) exited with exit code 1
+2026-07-03 02:36:21.583 UTC [25] LOG:  shutting down
+2026-07-03 02:36:21.590 UTC [25] LOG:  checkpoint starting: shutdown immediate
+2026-07-03 02:36:21.625 UTC [25] LOG:  checkpoint complete: wrote 0 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.001 s, total=0.042 s; sync files=0, longest=0.000 s, average=0.000 s; distance=0 kB, estimate=0 kB; lsn=0/1999BA0, redo lsn=0/1999BA0
+2026-07-03 02:36:21.634 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-03 03:22:32.825 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-03 03:22:32.826 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-03 03:22:32.826 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-03 03:22:32.839 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-03 03:22:32.853 UTC [29] LOG:  database system was shut down at 2026-07-03 02:36:21 UTC
+2026-07-03 03:22:32.868 UTC [1] LOG:  database system is ready to accept connections
+2026-07-03 03:23:42.401 UTC [1] LOG:  received fast shutdown request
+2026-07-03 03:23:42.409 UTC [1] LOG:  aborting any active transactions
+2026-07-03 03:23:42.413 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-03 03:23:42.413 UTC [27] LOG:  shutting down
+2026-07-03 03:23:42.420 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-03 03:23:42.493 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.020 s, total=0.081 s; sync files=2, longest=0.011 s, average=0.010 s; distance=0 kB, estimate=0 kB; lsn=0/1999C50, redo lsn=0/1999C50
+2026-07-03 03:23:42.500 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-04 10:56:52.107 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-04 10:56:52.108 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-04 10:56:52.108 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-04 10:56:52.120 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-04 10:56:52.134 UTC [29] LOG:  database system was shut down at 2026-07-03 03:23:42 UTC
+2026-07-04 10:56:52.149 UTC [1] LOG:  database system is ready to accept connections
+2026-07-04 10:58:58.259 UTC [1] LOG:  received fast shutdown request
+2026-07-04 10:58:58.264 UTC [1] LOG:  aborting any active transactions
+2026-07-04 10:58:58.269 UTC [1] LOG:  background worker "logical replication launcher" (PID 32) exited with exit code 1
+2026-07-04 10:58:58.270 UTC [27] LOG:  shutting down
+2026-07-04 10:58:58.279 UTC [27] LOG:  checkpoint starting: shutdown immediate
+2026-07-04 10:58:58.343 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.018 s, total=0.073 s; sync files=2, longest=0.010 s, average=0.009 s; distance=0 kB, estimate=0 kB; lsn=0/1999D00, redo lsn=0/1999D00
+2026-07-04 10:58:58.351 UTC [1] LOG:  database system is shut down
+
+PostgreSQL Database directory appears to contain a database; Skipping initialization
+
+2026-07-04 15:27:56.641 UTC [1] LOG:  starting PostgreSQL 17.10 on x86_64-pc-linux-musl, compiled by gcc (Alpine 15.2.0) 15.2.0, 64-bit
+2026-07-04 15:27:56.641 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+2026-07-04 15:27:56.641 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+2026-07-04 15:27:56.652 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+2026-07-04 15:27:56.665 UTC [29] LOG:  database system was shut down at 2026-07-04 10:58:58 UTC
+2026-07-04 15:27:56.676 UTC [1] LOG:  database system is ready to accept connections
+2026-07-04 15:32:56.765 UTC [27] LOG:  checkpoint starting: time
+2026-07-04 15:32:56.816 UTC [27] LOG:  checkpoint complete: wrote 3 buffers (0.0%); 0 WAL file(s) added, 0 removed, 0 recycled; write=0.001 s, sync=0.014 s, total=0.052 s; sync files=2, longest=0.008 s, average=0.007 s; distance=0 kB, estimate=0 kB; lsn=0/1999E08, redo lsn=0/1999DB0
